@@ -14,19 +14,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
+import leila.Config;
 
 /**
  *
  * @author 4najal61
  */
-public class SearchHotell extends JFrame implements ActionListener {
-    
-    
-    JButton BookingButton;
+public class Booking  extends JFrame implements ActionListener {
+    //Constrauctor- initial state
+JButton BookingButton;
 JTextField customernameTextField;
 JTextField passworJTextField;
-    public SearchHotell() {
+    public Booking() {
         //set the window layout manager
         this.setLayout(new BorderLayout());
         // add heading
@@ -79,5 +78,6 @@ JTextField passworJTextField;
             System.out.println("Booking failed");
          }
       }
+      }
     
-}
+

@@ -1,4 +1,5 @@
 package view;
+import view.MainPage;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -64,6 +65,10 @@ JTextField passworJTextField;
       if (e.getSource() == loginButton){
          if (usernameTextField.getText().equals(Config.USERNAME)&&passworJTextField.getText().equals(Config.PASSWORD)){
              System.out.println("login succesful");
+                     MainPage MainGui = new MainPage();
+                     MainGui.pack();
+                     MainGui.setVisible(true);
+ 
              
          }
          else {
